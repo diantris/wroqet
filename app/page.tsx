@@ -39,11 +39,13 @@ export default function ProfessionalPortfolio() {
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#30d158] to-[#1c1c1e] border-2 border-[#38383a] overflow-hidden flex-shrink-0 relative">
               <Image src={diAv} alt="Profile photo" fill className="object-cover" />
             </div>
+            
             <div className="absolute bottom-0 right-0 w-6 h-6 bg-[#30d158] rounded-full border-2 border-[#000000]" />
           </div>
-          <h3 className="text-2xl font-bold mb-2">Your QA/QE Profile</h3>
+          <h3 className="text-2xl font-bold mb-1">Your QA/QE/SDET</h3>
+          <p className="text-sm text-gray-300 mb-3">Katarzyna Jaworska</p>
           <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-            Replace this with your professional photo and bio. Showcase your expertise and personality.
+            Whether I'm on the baize or in the Sprint, I am the guardian of the game's integrity. Just like a snooker referee, as a QA/QE I do more than catch bugs - I manage the "state of the table". I borrow heavily from Product Owner strategy and Scrum Master facilitation to ensure the rules are clear, the environment is stable, the "break" is not interrupted and every delivery is as clinical as a total clearance.
           </p>
           <div className="w-full space-y-2 text-left">
             <div className="text-xs uppercase tracking-[0.2em] text-gray-500 font-bold">Specializations</div>
@@ -80,7 +82,7 @@ export default function ProfessionalPortfolio() {
             className="bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-6 flex flex-col items-center justify-center text-center"
           >
             <span className="text-5xl font-bold mb-1">10</span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-semibold">Years Experience</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-semibold">Years of Experience</span>
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
@@ -89,7 +91,7 @@ export default function ProfessionalPortfolio() {
             className="bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-6 flex flex-col items-center justify-center text-center"
           >
             <span className="text-5xl font-bold text-[#30d158] mb-1">4</span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-semibold">Automation Focus</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-semibold">Years of Automation Focus</span>
           </motion.div>
         </div>
 
@@ -100,7 +102,7 @@ export default function ProfessionalPortfolio() {
           transition={{ delay: 0.2 }}
           className="bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-8"
         >
-          <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Primary Engine</span>
+          <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Previous experience with tools;</span>
           <div className="mt-6 mb-8">
             <PlaywrightTSLogo />
             <p className="text-sm text-gray-400 mt-2">End-to-end type-safe automation.</p>
@@ -184,8 +186,8 @@ export default function ProfessionalPortfolio() {
       </div>
 
       {/* FOOTER */}
-      <footer className="mt-20 text-center text-gray-600 text-[10px] uppercase tracking-widest">
-        Available for Selective High-Impact Projects • 2026
+      <footer className="mt-20 text-center text-gray-600 text-[10px]">
+        © 2026 Katarzyna Jaworska
       </footer>
 
       {/* MARQUEE STYLES */}
