@@ -5,23 +5,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import diAv from '../public/images/di-av.png';
 
-// --- Components & Icons ---
-
-const PlaywrightTSLogo = () => (
-  <div className="flex items-center gap-2 text-[#30d158]">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8">
-      <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z" />
-    </svg>
-    <span className="text-2xl font-bold tracking-tighter text-white">TS</span>
-  </div>
-);
-
 // --- Main Page ---
 
 export default function ProfessionalPortfolio() {
   const [isVerified, setIsVerified] = useState(false);
-
-  const secondaryTools = ['Jenkins', 'JMeter', 'Postman', 'Git/Bitbucket', 'Docker', 'Xray', 'Jira'];
   const projectTypes = ['Mobile Apps', 'Web Pages', 'Standalone Software', 'SaaS', 'CRM Systems', 'Enterprise Solutions'];
 
   return (
@@ -103,16 +90,67 @@ export default function ProfessionalPortfolio() {
           className="bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-8"
         >
           <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Previous experience with tools;</span>
-          <div className="mt-6 mb-8">
-            <PlaywrightTSLogo />
-            <p className="text-sm text-gray-400 mt-2">End-to-end type-safe automation.</p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {secondaryTools.map(tool => (
-              <span key={tool} className="px-3 py-1 bg-black/50 border border-[#38383a] rounded-full text-[10px] text-gray-400 font-medium">
-                {tool}
-              </span>
-            ))}
+          
+          <div className="mt-6 space-y-5">
+            {/* Strategy & Product */}
+            <div>
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Strategy & Product</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Jira', 'Confluence', 'Miro', 'Figma', 'Axe (A11y)', 'Slack', 'Teams'].map(tool => (
+                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            {/* Engineering & Logic */}
+            <div>
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Engineering & Logic</h4>
+              <div className="flex flex-wrap gap-2">
+                {['TypeScript', 'Java', 'SQL', 'Bash', 'Cucumber/Gherkin', 'VSCode', 'IntelliJ'].map(tool => (
+                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            {/* Modern Automation */}
+            <div>
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Modern Automation</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Playwright', 'Appium', 'BrowserStack', 'Xcode', 'Android Studio', 'Firebase'].map(tool => (
+                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            {/* Network & Security */}
+            <div>
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Network & Security</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Postman', 'Swagger', 'Charles Proxy', 'DevTools', 'OWASP 10', 'Kafka'].map(tool => (
+                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            {/* Ops & Observability */}
+            <div>
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Ops & Observability</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Jenkins', 'CircleCI', 'Docker', 'Dynatrace', 'Kibana', 'Crashlytics'].map(tool => (
+                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </motion.div>
 
