@@ -34,16 +34,6 @@ export default function ProfessionalPortfolio() {
           <p className="text-sm text-gray-400 mb-6 leading-relaxed">
             Whether I'm on the baize or in the Sprint, I am the guardian of the game's integrity. Just like a snooker referee, as a QA/QE I do more than catch bugs - I manage the "state of the table". I borrow heavily from Product Owner strategy and Scrum Master facilitation to ensure the rules are clear, the environment is stable, the "break" is not interrupted and every delivery is as clinical as a total clearance.
           </p>
-          <div className="w-full space-y-2 text-left">
-            <div className="text-xs uppercase tracking-[0.2em] text-gray-500 font-bold">Specializations</div>
-            <div className="flex flex-wrap gap-2">
-              {['Test Automation', 'Quality Strategy', 'Team Leadership'].map((spec) => (
-                <span key={spec} className="px-3 py-1 bg-[#30d158]/10 border border-[#30d158]/30 rounded-full text-[10px] text-[#30d158] font-medium">
-                  {spec}
-                </span>
-              ))}
-            </div>
-          </div>
         </motion.div>
         
         {/* HERO SECTION */}
@@ -159,23 +149,32 @@ export default function ProfessionalPortfolio() {
         >
           <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#30d158] opacity-[0.03] blur-3xl group-hover:opacity-10 transition-opacity" />
           <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
-            AI-Powered Testing
+            Specialisations
             <span className="w-2 h-2 bg-[#30d158] rounded-full animate-pulse" />
           </h3>
-          <p className="text-sm text-gray-400 leading-relaxed">
-            Utilizing LLMs for autonomous test data generation and self-healing selector strategies.
-          </p>
+          <div className="w-full space-y-2 text-left">
+            <div className="flex flex-wrap gap-2">
+              {['Exploratory Testing', 'Test Automation', 'UAT Facilitation', 'E2E Testing', 'Testing Strategy', 'AI-assisted testing', 'Team Leadership'].map((spec) => (
+                <span key={spec} className="px-3 py-1 bg-[#30d158]/10 border border-[#30d158]/30 rounded-full text-[10px] text-[#30d158] font-medium">
+                  {spec}
+                </span>
+              ))}
+            </div>
+          </div>
         </motion.div>
 
-        {/* THE EVIDENCE GATE (Toggle Component) */}
+        {/* DEFINITION OF DONE - Centerpiece Toggle */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-8"
+          className={`bg-[#1c1c1e] border rounded-[32px] p-8 transition-colors ${isVerified ? 'border-[#30d158]/50' : 'border-[#38383a]'}`}
         >
+          <span className="text-[10px] uppercase tracking-[0.2em] font-mono text-gray-500 font-bold mb-4 block">Definition_of_done;</span>
           <div className="flex items-center justify-between mb-6">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">The Standard</span>
+            <h3 className={`text-xl font-semibold leading-tight transition-colors ${isVerified ? 'text-[#30d158]' : 'text-gray-500'}`}>
+              {isVerified ? "...to Verified ✓" : "From Incomplete..."}
+            </h3>
             <button 
               onClick={() => setIsVerified(!isVerified)}
               className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-[#3a3a3c]'}`}
@@ -186,17 +185,22 @@ export default function ProfessionalPortfolio() {
               />
             </button>
           </div>
-          <h3 className="text-xl font-semibold mb-4 leading-tight">
-            {isVerified ? "Verified Definition of Done" : "Incomplete PR Evidence"}
-          </h3>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-xs text-gray-400">
-              <div className={`h-1.5 w-1.5 rounded-full ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
-              Verifiable Test Proof
+          <div className={`space-y-2.5 transition-opacity ${isVerified ? 'opacity-100' : 'opacity-60'}`}>
+            <div className="flex items-center gap-2 text-xs">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Traceability: Requirements mapped to test evidence.</span>
             </div>
-            <div className="flex items-center gap-2 text-xs text-gray-400">
-              <div className={`h-1.5 w-1.5 rounded-full ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
-              CI/CD Pipeline Green
+            <div className="flex items-center gap-2 text-xs">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Automated Proof: Playwright & API suites Green.</span>
+            </div>
+            <div className="flex items-center gap-2 text-xs">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Compliance: Axe (A11y) & OWASP Security verified.</span>
+            </div>
+            <div className="flex items-center gap-2 text-xs">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Observability: Telemetry & Logging hooks active.</span>
             </div>
           </div>
         </motion.div>
