@@ -52,13 +52,9 @@ export default function ProfessionalPortfolio() {
           animate={{ opacity: 1, y: 0 }}
           className="md:col-span-2 bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-8 md:p-12 flex flex-col justify-center"
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-[1.1]">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1]">
             Exposing critical flaws before your users do.
           </h1>
-          <p className="text-lg md:text-xl text-gray-400 max-w-lg leading-relaxed">
-            10 years of precision testing. 4 years of deep automation. 
-            Integrating quality into your Definition of Done.
-          </p>
         </motion.section>
 
         {/* EXPERIENCE STATS */}
@@ -82,21 +78,21 @@ export default function ProfessionalPortfolio() {
           </motion.div>
         </div>
 
-        {/* PRIMARY TECH STACK */}
+        {/* PRIMARY TECH STACK - Spans multiple rows on the right */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-8"
+          className="md:row-span-4 bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-8 flex flex-col"
         >
           <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Previous experience with tools;</span>
           
-          <div className="mt-6 space-y-5">
+          <div className="mt-4 space-y-6 flex-1">
             {/* Strategy & Product */}
             <div>
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Strategy & Product</h4>
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Strategy & Product</h4>
               <div className="flex flex-wrap gap-2">
-                {['Jira', 'Confluence', 'Miro', 'Figma', 'Axe (A11y)', 'Slack', 'Teams'].map(tool => (
+                {['Jira', 'Confluence', 'Miro', 'Figma', 'Slack', 'Teams'].map(tool => (
                   <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
@@ -105,10 +101,10 @@ export default function ProfessionalPortfolio() {
             </div>
             
             {/* Engineering & Logic */}
-            <div>
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Engineering & Logic</h4>
+            <div className="mt-6">
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Engineering & Logic</h4>
               <div className="flex flex-wrap gap-2">
-                {['TypeScript', 'Java', 'SQL', 'Bash', 'Cucumber/Gherkin', 'VSCode', 'IntelliJ'].map(tool => (
+                {['TypeScript', 'SQL', 'Bash', 'Cucumber/Gherkin', 'VSCode', 'IntelliJ', 'Java'].map(tool => (
                   <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
@@ -117,10 +113,10 @@ export default function ProfessionalPortfolio() {
             </div>
             
             {/* Modern Automation */}
-            <div>
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Modern Automation</h4>
+            <div className="mt-6">
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Modern Automation</h4>
               <div className="flex flex-wrap gap-2">
-                {['Playwright', 'Appium', 'BrowserStack', 'Xcode', 'Android Studio', 'Firebase'].map(tool => (
+                {['Playwright', 'BrowserStack', 'Xcode', 'Android Studio', 'Firebase', 'Axe'].map(tool => (
                   <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
@@ -129,8 +125,8 @@ export default function ProfessionalPortfolio() {
             </div>
             
             {/* Network & Security */}
-            <div>
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Network & Security</h4>
+            <div className="mt-6">
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Network & Security</h4>
               <div className="flex flex-wrap gap-2">
                 {['Postman', 'Swagger', 'Charles Proxy', 'DevTools', 'OWASP 10', 'Kafka'].map(tool => (
                   <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
@@ -141,8 +137,8 @@ export default function ProfessionalPortfolio() {
             </div>
             
             {/* Ops & Observability */}
-            <div>
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-3">Ops & Observability</h4>
+            <div className="mt-6">
+              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Ops & Observability</h4>
               <div className="flex flex-wrap gap-2">
                 {['Jenkins', 'CircleCI', 'Docker', 'Dynatrace', 'Kibana', 'Crashlytics'].map(tool => (
                   <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
