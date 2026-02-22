@@ -75,15 +75,15 @@ export default function ProfessionalPortfolio() {
           transition={{ delay: 0.2 }}
           className="md:row-span-4 bg-[#1c1c1e] border border-[#38383a] rounded-[32px] p-8 flex flex-col"
         >
-          <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Previous experience with tools;</span>
+          <span className="text-[10px] uppercase tracking-[0.2em] font-mono text-gray-500 font-bold">Previous_experience_with_tools;</span>
           
-          <div className="mt-4 space-y-6 flex-1">
+          <div className="mt-4 space-y-7 flex-1">
             {/* Strategy & Product */}
             <div>
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Strategy & Product</h4>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Strategy & Product</div>
               <div className="flex flex-wrap gap-2">
                 {['Jira', 'Confluence', 'Miro', 'Figma', 'Slack', 'Teams'].map(tool => (
-                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                  <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
                 ))}
@@ -91,11 +91,11 @@ export default function ProfessionalPortfolio() {
             </div>
             
             {/* Engineering & Logic */}
-            <div className="mt-6">
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Engineering & Logic</h4>
+            <div className="mt-7">
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Engineering & Logic</div>
               <div className="flex flex-wrap gap-2">
                 {['TypeScript', 'SQL', 'Bash', 'Cucumber/Gherkin', 'VSCode', 'IntelliJ', 'Java'].map(tool => (
-                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                  <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
                 ))}
@@ -103,11 +103,11 @@ export default function ProfessionalPortfolio() {
             </div>
             
             {/* Modern Automation */}
-            <div className="mt-6">
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Modern Automation</h4>
+            <div className="mt-7">
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Modern Automation</div>
               <div className="flex flex-wrap gap-2">
                 {['Playwright', 'BrowserStack', 'Xcode', 'Android Studio', 'Firebase', 'Axe'].map(tool => (
-                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                  <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
                 ))}
@@ -115,11 +115,11 @@ export default function ProfessionalPortfolio() {
             </div>
             
             {/* Network & Security */}
-            <div className="mt-6">
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Network & Security</h4>
+            <div className="mt-7">
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Network & Security</div>
               <div className="flex flex-wrap gap-2">
                 {['Postman', 'Swagger', 'Charles Proxy', 'DevTools', 'OWASP 10', 'Kafka'].map(tool => (
-                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                  <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
                 ))}
@@ -127,11 +127,11 @@ export default function ProfessionalPortfolio() {
             </div>
             
             {/* Ops & Observability */}
-            <div className="mt-6">
-              <h4 className="text-[11px] uppercase tracking-[0.15em] text-gray-600 font-semibold mb-2.5">Ops & Observability</h4>
+            <div className="mt-7">
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Ops & Observability</div>
               <div className="flex flex-wrap gap-2">
                 {['Jenkins', 'CircleCI', 'Docker', 'Dynatrace', 'Kibana', 'Crashlytics'].map(tool => (
-                  <span key={tool} className="px-3 py-1.5 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                  <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
                 ))}
@@ -154,8 +154,8 @@ export default function ProfessionalPortfolio() {
           </h3>
           <div className="w-full space-y-2 text-left">
             <div className="flex flex-wrap gap-2">
-              {['Exploratory Testing', 'Test Automation', 'UAT Facilitation', 'E2E Testing', 'Testing Strategy', 'AI-assisted testing', 'Team Leadership'].map((spec) => (
-                <span key={spec} className="px-3 py-1 bg-[#30d158]/10 border border-[#30d158]/30 rounded-full text-[10px] text-[#30d158] font-medium">
+              {['Exploratory Testing', 'Test Automation', 'UAT Facilitation', 'E2E Testing', 'Shift-Left Approach','Testing Strategy', 'AI-assisted testing', 'Team Leadership'].map((spec) => (
+                <span key={spec} className="px-3 py-1 bg-[#30d158]/10 border border-[#30d158]/30 rounded-full text-[10px] text-[#30d158] font-medium hover:border-[#30d158]/60 transition-colors">
                   {spec}
                 </span>
               ))}
@@ -186,20 +186,24 @@ export default function ProfessionalPortfolio() {
             </button>
           </div>
           <div className={`space-y-2.5 transition-opacity ${isVerified ? 'opacity-100' : 'opacity-60'}`}>
-            <div className="flex items-center gap-2 text-xs">
-              <div className={`h-1.5 w-1.5 rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+            <div className="flex items-center gap-2.5 text-xs pl-0.5">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors flex-shrink-0 ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
               <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Traceability: Requirements mapped to test evidence.</span>
             </div>
-            <div className="flex items-center gap-2 text-xs">
-              <div className={`h-1.5 w-1.5 rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
-              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Automated Proof: Playwright & API suites Green.</span>
+            <div className="flex items-center gap-2.5 text-xs pl-0.5">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors flex-shrink-0 ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Test Proof: Automated and manual suites green.</span>
             </div>
-            <div className="flex items-center gap-2 text-xs">
-              <div className={`h-1.5 w-1.5 rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
-              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Compliance: Axe (A11y) & OWASP Security verified.</span>
+            <div className="flex items-center gap-2.5 text-xs pl-0.5">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors flex-shrink-0 ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Contract Validation: No service-to-service "miscues".</span>
             </div>
-            <div className="flex items-center gap-2 text-xs">
-              <div className={`h-1.5 w-1.5 rounded-full transition-colors ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+            <div className="flex items-center gap-2.5 text-xs pl-0.5">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors flex-shrink-0 ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
+              <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Compliance: Axe (A11y) & OWASP 10 verified.</span>
+            </div>
+            <div className="flex items-center gap-2.5 text-xs pl-0.5">
+              <div className={`h-1.5 w-1.5 rounded-full transition-colors flex-shrink-0 ${isVerified ? 'bg-[#30d158]' : 'bg-red-500'}`} />
               <span className={isVerified ? 'text-gray-300' : 'text-gray-500'}>Observability: Telemetry & Logging hooks active.</span>
             </div>
           </div>
