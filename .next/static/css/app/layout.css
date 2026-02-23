@@ -823,6 +823,9 @@ video {
 .pl-0\.5{
   padding-left: 0.125rem;
 }
+.pb-\[3px\]{
+  padding-bottom: 3px;
+}
 .text-left{
   text-align: left;
 }

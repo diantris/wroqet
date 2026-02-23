@@ -88,7 +88,7 @@ export default function ProfessionalPortfolio() {
           <div className="mt-4 space-y-7 flex-1">
             {/* Testing Tools & Standards */}
             <div>
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Testing Tools &amp; Standards</div>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5 pb-[3px]">Testing Tools &amp; Standards</div>
               <div className="flex flex-wrap gap-2">
                 {['Playwright', 'Cucumber/Gherkin', 'Postman', 'Swagger', 'BrowserStack', 'Xray', 'SQL', 'JMeter', 'Axe/A11y', 'OWASP 10', 'Charles Proxy', 'DevTools'].map(tool => (
                   <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
@@ -100,7 +100,7 @@ export default function ProfessionalPortfolio() {
 
             {/* Engineering & Logic */}
             <div className="mt-7">
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Engineering &amp; Logic</div>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5 pb-[3px]">Engineering &amp; Logic</div>
               <div className="flex flex-wrap gap-2">
                 {['TypeScript', 'Copilot', 'Java', 'VSCode', 'IntelliJ Idea', 'Eclipse', 'Android Studio', 'Xcode'].map(tool => (
                   <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
@@ -112,7 +112,7 @@ export default function ProfessionalPortfolio() {
 
             {/* Ops & Observability */}
             <div className="mt-7">
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Ops &amp; Observability</div>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5 pb-[3px]">Ops &amp; Observability</div>
               <div className="flex flex-wrap gap-2">
                 {['Git', 'Bitbucket', 'Jenkins', 'CircleCI', 'Docker', 'Kafka', 'Dynatrace', 'ELK/Kibana', 'Firebase/Crashlytics'].map(tool => (
                   <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
@@ -124,7 +124,7 @@ export default function ProfessionalPortfolio() {
 
             {/* Strategy & Product */}
             <div className="mt-7">
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Strategy &amp; Product</div>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5 pb-[3px]">Strategy &amp; Product</div>
               <div className="flex flex-wrap gap-2">
                 {['Jira', 'Zephyr', 'Confluence', 'Figma', 'Miro', 'Slack', 'Teams', 'Mantis', 'TestLink'].map(tool => (
                   <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
