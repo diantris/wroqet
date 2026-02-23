@@ -30,7 +30,15 @@ export default function ProfessionalPortfolio() {
             <div className="absolute bottom-0 right-0 w-6 h-6 bg-[#30d158] rounded-full border-2 border-[#000000]" />
           </div>
           <h3 className="text-2xl font-bold mb-1">Your QA/QE/SDET</h3>
-          <p className="text-sm text-gray-300 mb-3">Katarzyna Jaworska</p>
+          <p className="text-sm text-gray-300 mb-4">Katarzyna Jaworska</p>
+          <a 
+            href="https://www.linkedin.com/in/cat-ja/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mb-4 px-4 py-2 border border-[#30d158] rounded-full text-[10px] font-medium text-[#30d158] hover:bg-[#30d158]/5 transition-colors inline-flex items-center"
+          >
+            LinkedIn
+          </a>
           <p className="text-sm text-gray-400 mb-6 leading-relaxed">
             Whether I'm on the baize or in the Sprint, I am the guardian of the game's integrity. Just like a snooker referee, as a QA/QE I do more than catch bugs - I manage the "state of the table". I borrow heavily from Product Owner strategy and Scrum Master facilitation to ensure the rules are clear, the environment is stable, the "break" is not interrupted and every delivery is as clinical as a total clearance.
           </p>
