@@ -86,59 +86,47 @@ export default function ProfessionalPortfolio() {
           <span className="text-[10px] uppercase tracking-[0.2em] font-mono text-gray-500 font-bold">Previous_experience_with_tools;</span>
           
           <div className="mt-4 space-y-7 flex-1">
-            {/* Strategy & Product */}
+            {/* Testing Tools & Standards */}
             <div>
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Strategy & Product</div>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Testing Tools &amp; Standards</div>
               <div className="flex flex-wrap gap-2">
-                {['Jira', 'Confluence', 'Miro', 'Figma', 'Slack', 'Teams'].map(tool => (
+                {['Playwright', 'Cucumber/Gherkin', 'Postman', 'Swagger', 'BrowserStack', 'Xray', 'SQL', 'JMeter', 'Axe/A11y', 'OWASP 10', 'Charles Proxy', 'DevTools'].map(tool => (
                   <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
                 ))}
               </div>
             </div>
-            
+
             {/* Engineering & Logic */}
             <div className="mt-7">
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Engineering & Logic</div>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Engineering &amp; Logic</div>
               <div className="flex flex-wrap gap-2">
-                {['TypeScript', 'SQL', 'Bash', 'Cucumber/Gherkin', 'VSCode', 'IntelliJ', 'Java'].map(tool => (
+                {['TypeScript', 'Copilot', 'Java', 'VSCode', 'IntelliJ Idea', 'Eclipse', 'Android Studio', 'Xcode'].map(tool => (
                   <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
                 ))}
               </div>
             </div>
-            
-            {/* Modern Automation */}
-            <div className="mt-7">
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Modern Automation</div>
-              <div className="flex flex-wrap gap-2">
-                {['Playwright', 'BrowserStack', 'Xcode', 'Android Studio', 'Firebase', 'Axe'].map(tool => (
-                  <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
-            {/* Network & Security */}
-            <div className="mt-7">
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Network & Security</div>
-              <div className="flex flex-wrap gap-2">
-                {['Postman', 'Swagger', 'Charles Proxy', 'DevTools', 'OWASP 10', 'Kafka'].map(tool => (
-                  <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
+
             {/* Ops & Observability */}
             <div className="mt-7">
-              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Ops & Observability</div>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Ops &amp; Observability</div>
               <div className="flex flex-wrap gap-2">
-                {['Jenkins', 'CircleCI', 'Docker', 'Dynatrace', 'Kibana', 'Crashlytics'].map(tool => (
+                {['Git', 'Bitbucket', 'Jenkins', 'CircleCI', 'Docker', 'Kafka', 'Dynatrace', 'ELK/Kibana', 'Firebase/Crashlytics'].map(tool => (
+                  <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Strategy & Product */}
+            <div className="mt-7">
+              <div className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold mb-2.5">Strategy &amp; Product</div>
+              <div className="flex flex-wrap gap-2">
+                {['Jira', 'Zephyr', 'Confluence', 'Figma', 'Miro', 'Slack', 'Teams', 'Mantis', 'TestLink'].map(tool => (
                   <span key={tool} className="px-3 py-1 bg-[#2c2c2e] border border-[#38383a] rounded-full text-[10px] text-gray-300 font-medium hover:border-[#30d158]/40 transition-colors">
                     {tool}
                   </span>
